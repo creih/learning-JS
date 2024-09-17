@@ -8,7 +8,7 @@ cipher_text = (plain_text + key) modululs 26
 
 */
 
-key = 11
+key = 110
 alphabets=[
     "a", "b", "c", "d", "e", "f",
     "g", "h", "i", "j", "k", "l",
@@ -24,7 +24,7 @@ for(var index=0; index<p_txt.length; index++)
     for (var ind=0; ind<alphabets.length; ind++)
     if (p_txt[index] == alphabets[ind])
         {
-            formula = (ind+key)
+            formula = (ind+key) % 26
             c_txt = alphabets[formula]
             console.log(c_txt)
             
